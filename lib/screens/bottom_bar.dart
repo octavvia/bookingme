@@ -1,3 +1,4 @@
+import 'package:bookingme/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 
@@ -11,7 +12,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static final List<Widget> _WidgetOptions = <Widget>[
-    HomeScreen(),
+    const HomeScreen(),
     const Text('Search'),
     const Text('Tickets'),
     const Text('Profile'),
@@ -25,13 +26,6 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'My Tickets',
-          style: TextStyle(color: Colors.black),
-          textAlign: TextAlign.right,
-        ),
-      ),
       body: Center(
         child: _WidgetOptions[_selectedIndex],
       ),

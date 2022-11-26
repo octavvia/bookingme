@@ -11,10 +11,10 @@ class TicketView extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
     return SizedBox(
-      width: size.width,
+      width: size.width * 0.85,
       height: 200,
       child: Container(
-        margin: const EdgeInsets.only(left: 16),
+        margin: const EdgeInsets.only(right: 16),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -174,20 +174,47 @@ class TicketView extends StatelessWidget {
                   bottomRight: Radius.circular(21),
                 ),
               ),
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.only(
+                  left: 16, right: 16, top: 10, bottom: 16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(children: [
-                        Text('30 Dec 2020',
-                            style: Styles.headLineStyle3
-                                .copyWith(color: Colors.white)),
-                        const Gap(10),
-                        Text('DATE',
-                            style: Styles.headLineStyle4
-                                .copyWith(color: Colors.white)),
-                      ]),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('30 Dec 2020',
+                                style: Styles.headLineStyle3
+                                    .copyWith(color: Colors.white)),
+                            const Gap(10),
+                            Text('DATE',
+                                style: Styles.headLineStyle4
+                                    .copyWith(color: Colors.white)),
+                          ]),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text('09:00',
+                                style: Styles.headLineStyle3
+                                    .copyWith(color: Colors.white)),
+                            const Gap(10),
+                            Text('Depanture time',
+                                style: Styles.headLineStyle4
+                                    .copyWith(color: Colors.white)),
+                          ]),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text('99',
+                                style: Styles.headLineStyle3
+                                    .copyWith(color: Colors.white)),
+                            const Gap(10),
+                            Text('NUMBER',
+                                style: Styles.headLineStyle4
+                                    .copyWith(color: Colors.white)),
+                          ]),
                     ],
                   )
                 ],

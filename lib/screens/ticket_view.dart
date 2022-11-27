@@ -69,13 +69,13 @@ class TicketView extends StatelessWidget {
                           ),
                         ]),
                       ),
-                      Center(
-                        child: Transform.rotate(
-                          angle: 1.5,
-                          child: const Icon(Icons.local_airport_rounded,
-                              color: Colors.white, size: 24),
-                        ),
-                      ),
+                      // Center(
+                      //   child: Transform.rotate(
+                      //     angle: 1.5,
+                      //     child: const Icon(Icons.local_airport_rounded,
+                      //         color: Colors.white, size: 24),
+                      //   ),
+                      // ),
                       const ThickContainer(),
                       Expanded(
                         child: Container(),

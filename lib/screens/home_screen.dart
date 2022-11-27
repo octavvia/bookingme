@@ -1,5 +1,6 @@
 import 'package:bookingme/screens/hotel_screen.dart';
 import 'package:bookingme/screens/ticket_view.dart';
+import 'package:bookingme/utils/app_info_list.dart';
 import 'package:bookingme/utils/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -69,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                   Text("Upcoming Flights", style: Styles.headLineStyle2),
                   InkWell(
                     onTap: () {
-                      print("you're tapped");
+                      // print("you're tapped");
                     },
                     child: Text("See All",
                         style: Styles.textStyle
@@ -98,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                 Text("Hotels", style: Styles.headLineStyle2),
                 InkWell(
                   onTap: () {
-                    print("you're tapped");
+                    // print("you're tapped");
                   },
                   child: Text("See All",
                       style: Styles.textStyle
@@ -111,11 +112,11 @@ class HomeScreen extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(left: 20),
-            child: Row(children: const [
-              HotelScreen(),
-              HotelScreen(),
-            ]),
-          )
+            child: Row(
+                children: hotelList
+                    .map((singleHotel) => HotelScreen(hotel: singleHotel))
+                    .toList()),
+          ),
         ],
       ),
     );

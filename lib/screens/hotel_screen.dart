@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class HotelScreen extends StatelessWidget {
-  const HotelScreen({super.key});
+  final Map<String, dynamic> hotel;
+  const HotelScreen({Key? key, required this.hotel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,7 @@ class HotelScreen extends StatelessWidget {
             ),
           ]),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 180,
@@ -43,10 +45,10 @@ class HotelScreen extends StatelessWidget {
               style: Styles.headLineStyle2.copyWith(color: Styles.kakiColor)),
           const Gap(10),
           Text('Hyatt Regency',
-              style: Styles.headLineStyle3.copyWith(color: Styles.kakiColor)),
+              style: Styles.headLineStyle3.copyWith(color: Colors.white)),
           const Gap(10),
-          Text('Hyatt Regency',
-              style: Styles.headLineStyle3.copyWith(color: Styles.kakiColor))
+          Text('Rp. 1.000.000/night',
+              style: Styles.headLineStyle1.copyWith(color: Styles.kakiColor))
         ],
       ),
     );

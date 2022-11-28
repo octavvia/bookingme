@@ -34,21 +34,21 @@ class HotelScreen extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(21),
               color: Styles.primaryColor,
-              image: const DecorationImage(
-                image: AssetImage("assets/images/bedroom1.jpg"),
+              image: DecorationImage(
                 fit: BoxFit.cover,
+                image: AssetImage("assets/images/${hotel['image']}"),
               ),
             ),
           ),
           const Gap(10),
-          Text('open space',
+          Text(hotel['place'],
               style: Styles.headLineStyle2.copyWith(color: Styles.kakiColor)),
           const Gap(10),
-          Text('Hyatt Regency',
+          Text(hotel['hotel'],
               style: Styles.headLineStyle3.copyWith(color: Colors.white)),
           const Gap(10),
-          Text('Rp. 1.000.000/night',
-              style: Styles.headLineStyle1.copyWith(color: Styles.kakiColor))
+          Text('${hotel['price']}',
+              style: Styles.headLineStyle2.copyWith(color: Styles.kakiColor))
         ],
       ),
     );

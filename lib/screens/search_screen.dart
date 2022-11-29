@@ -1,4 +1,5 @@
 import 'package:bookingme/utils/app_styles.dart';
+import 'package:bookingme/widgets/double_text_widget.dart';
 import 'package:bookingme/widgets/icon_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -63,9 +64,15 @@ class SearchScreen extends StatelessWidget {
             ),
             Gap(AppLayout.getHeight(25)),
             const AppIconText(
-                icon: Icons.flight_takeoff_rounded, text: 'depature'),
+              icon: Icons.flight_takeoff_rounded,
+              text: 'depature',
+            ),
             Gap(AppLayout.getHeight(20)),
-            const AppIconText(icon: Icons.flight_land_rounded, text: 'Arrival'),
+            const AppIconText(
+              icon: Icons.flight_land_rounded,
+              text: 'Arrival',
+            ),
+            Gap(AppLayout.getHeight(20)),
             Container(
               padding: EdgeInsets.symmetric(
                   horizontal: AppLayout.getWidth(15),
@@ -75,15 +82,42 @@ class SearchScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppLayout.getWidth(10)),
               ),
               child: Center(
-                child: Row(
-                  children: [
-                    Text('Find Tickets',
-                        style: Styles.textStyle.copyWith(
-                          color: Colors.white,
-                        )),
-                  ],
-                ),
+                child: Text('Find Tickets',
+                    style: Styles.textStyle.copyWith(
+                      color: Colors.white,
+                    )),
               ),
+            ),
+            Gap(AppLayout.getHeight(20)),
+            const AppDoubleTextWidget(
+                bigText: 'Upcoming Flight', smallText: 'see all'),
+            Row(
+              children: [
+                Container(
+                  height: AppLayout.getHeight(400),
+                  width: size.width * .50,
+                  padding: EdgeInsets.symmetric(
+                      horizontal: AppLayout.getWidth(15),
+                      vertical: AppLayout.getHeight(15)),
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: AppLayout.getHeight(190),
+                        decoration: BoxDecoration(
+                          borderRadius:
+                              BorderRadius.circular(AppLayout.getHeight(12)),
+                          image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('assets/images/one.jpg')),
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
             )
           ]),
     );

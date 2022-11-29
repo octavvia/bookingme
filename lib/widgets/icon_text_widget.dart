@@ -21,12 +21,12 @@ class AppIconText extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Icon(
-            Icons.flight_takeoff_rounded,
-            color: Color(0xffbfc2df),
+          Icon(
+            icon,
+            color: const Color(0xffbfc2df),
           ),
           Gap(AppLayout.getWidth(10)),
-          Text('Depature', style: Styles.textStyle),
+          Text(text, style: Styles.textStyle),
         ],
       ),
     );

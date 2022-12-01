@@ -91,7 +91,9 @@ class SearchScreen extends StatelessWidget {
             Gap(AppLayout.getHeight(20)),
             const AppDoubleTextWidget(
                 bigText: 'Upcoming Flight', smallText: 'see all'),
+            Gap(AppLayout.getHeight(20)),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   height: AppLayout.getHeight(400),
@@ -99,9 +101,10 @@ class SearchScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(
                       horizontal: AppLayout.getWidth(15),
                       vertical: AppLayout.getHeight(15)),
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
-                  ),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius:
+                          BorderRadius.circular(AppLayout.getHeight(12))),
                   child: Column(
                     children: [
                       Container(
@@ -113,9 +116,48 @@ class SearchScreen extends StatelessWidget {
                               fit: BoxFit.cover,
                               image: AssetImage('assets/images/one.jpg')),
                         ),
-                      )
+                      ),
+                      Gap(AppLayout.getHeight(10)),
+                      Text(
+                          '20% discount of early booking of this flight. Don\'t miss out this chance',
+                          style: Styles.headLineStyle2),
                     ],
                   ),
+                ),
+                Column(
+                  children: [
+                    Container(
+                      width: size.width * 0.44,
+                      height: AppLayout.getHeight(174),
+                      decoration: BoxDecoration(
+                        color: Styles.orangeColor,
+                        borderRadius:
+                            BorderRadius.circular(AppLayout.getHeight(18)),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                          horizontal: AppLayout.getWidth(15),
+                          vertical: AppLayout.getHeight(15)),
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '20% discount of early booking of this flight. Don\'t miss out this chance',
+                              style: Styles.headLineStyle3
+                                  .copyWith(color: Colors.white),
+                            ),
+                          ]),
+                    ),
+                    Gap(AppLayout.getHeight(20)),
+                    Container(
+                      width: size.width * 0.44,
+                      height: AppLayout.getHeight(174),
+                      decoration: BoxDecoration(
+                        color: Styles.orangeColor,
+                        borderRadius:
+                            BorderRadius.circular(AppLayout.getHeight(18)),
+                      ),
+                    ),
+                  ],
                 )
               ],
             )

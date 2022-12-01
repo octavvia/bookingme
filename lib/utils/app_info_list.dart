@@ -3,19 +3,19 @@ List<Map<String, dynamic>> hotelList = [
     'image': 'one.jpg',
     'place': 'open space',
     'hotel': 'Hyatt Regency',
-    'price': '1.000.000',
+    'price': '1jt',
   },
   {
     'image': 'two.jpg',
     'place': 'open space',
     'hotel': 'Sheraton',
-    'price': '1.800.000',
+    'price': '1.8jt',
   },
   {
     'image': 'three.jpg',
     'place': 'open space',
     'hotel': 'Grand Hyatt',
-    'price': '2.000.000',
+    'price': '2jt',
   },
 ];
 

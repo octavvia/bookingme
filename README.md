@@ -1,16 +1,11 @@
 ## my progress 
 already done :
-- ui home screen
+______
+| ui home screen| ui search screen | ui ticket screen |
+________
+| ![image](https://user-images.githubusercontent.com/86775678/205308267-5a9849de-3910-4f32-ac31-bb2019e7696b.png)| ![image](https://user-images.githubusercontent.com/86775678/205309040-14633be0-7e9c-4c6c-b17e-2561e585fbed.png)
+ | ![image](https://user-images.githubusercontent.com/86775678/205309109-1e0e1b04-c535-4ba3-874e-ac1fb5d7f1c0.png)
 
-![image](https://user-images.githubusercontent.com/86775678/205308267-5a9849de-3910-4f32-ac31-bb2019e7696b.png)
-
-- ui search screen
-
-![image](https://user-images.githubusercontent.com/86775678/205308382-9966224d-c123-471c-b518-6ff876957e97.png)
-
--ui ticket screen
-
-![image](https://user-images.githubusercontent.com/86775678/205308466-55a1f47d-108d-46b6-8f4b-c2829793019f.png)
 
 on going:
 - ui design for ticket view

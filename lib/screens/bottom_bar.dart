@@ -1,5 +1,6 @@
 import 'package:bookingme/screens/home_screen.dart';
 import 'package:bookingme/screens/search_screen.dart';
+import 'package:bookingme/screens/ticket_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 
@@ -15,7 +16,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _WidgetOptions = <Widget>[
     const HomeScreen(),
     const SearchScreen(),
-    const Text('Tickets'),
+    const TicketScreen(),
     const Text('Profile'),
   ];
   void _onItemTapped(int index) {

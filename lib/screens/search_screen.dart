@@ -4,6 +4,7 @@ import 'package:bookingme/widgets/icon_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import '../utils/app_layout.dart';
+import '../widgets/ticket_tabs.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -23,45 +24,47 @@ class SearchScreen extends StatelessWidget {
                 style: Styles.headLineStyle1
                     .copyWith(fontSize: AppLayout.getWidth(35))),
             Gap(AppLayout.getHeight(20)),
-            FittedBox(
-              child: Container(
-                padding: const EdgeInsets.all(3.5),
-                height: 50,
-                width: size.width,
-                decoration: BoxDecoration(
-                  color: Styles.primaryColor,
-                  borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                        width: size.width * .50,
-                        padding: EdgeInsets.symmetric(
-                            vertical: AppLayout.getHeight(7)),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.horizontal(
-                              left: Radius.circular(AppLayout.getHeight(50))),
-                          color: Colors.white,
-                        ),
-                        child: const Center(
-                          child: Text('Airline Tickets'),
-                        )),
-                    Container(
-                        width: size.width * .46,
-                        padding: EdgeInsets.symmetric(
-                            vertical: AppLayout.getHeight(7)),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.horizontal(
-                              right: Radius.circular(AppLayout.getHeight(50))),
-                          color: Colors.transparent,
-                        ),
-                        child: const Center(
-                          child: Text('Hotel Booking'),
-                        ))
-                  ],
-                ),
-              ),
-            ),
+            const AppTicketTabs(
+                firstTab: 'AirLine Ticket', secondTab: 'Hotels'),
+            // FittedBox(
+            //   child: Container(
+            //     padding: const EdgeInsets.all(3.5),
+            //     height: 50,
+            //     width: size.width,
+            //     decoration: BoxDecoration(
+            //       color: Styles.primaryColor,
+            //       borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
+            //     ),
+            //     child: Row(
+            //       children: [
+            //         Container(
+            //             width: size.width * .50,
+            //             padding: EdgeInsets.symmetric(
+            //                 vertical: AppLayout.getHeight(7)),
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.horizontal(
+            //                   left: Radius.circular(AppLayout.getHeight(50))),
+            //               color: Colors.white,
+            //             ),
+            //             child: const Center(
+            //               child: Text('Airline Tickets'),
+            //             )),
+            //         Container(
+            //             width: size.width * .46,
+            //             padding: EdgeInsets.symmetric(
+            //                 vertical: AppLayout.getHeight(7)),
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.horizontal(
+            //                   right: Radius.circular(AppLayout.getHeight(50))),
+            //               color: Colors.transparent,
+            //             ),
+            //             child: const Center(
+            //               child: Text('Hotel Booking'),
+            //             ))
+            //       ],
+            //     ),
+            //   ),
+            // ),
             Gap(AppLayout.getHeight(25)),
             const AppIconText(
               icon: Icons.flight_takeoff_rounded,
@@ -127,7 +130,7 @@ class SearchScreen extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      width: size.width * 0.44,
+                      width: size.width * 0.35,
                       height: AppLayout.getHeight(174),
                       decoration: BoxDecoration(
                         color: Styles.orangeColor,
@@ -142,14 +145,14 @@ class SearchScreen extends StatelessWidget {
                           children: [
                             Text(
                               '20% discount of early booking of this flight. Don\'t miss out this chance',
-                              style: Styles.headLineStyle3
+                              style: Styles.headLineStyle4
                                   .copyWith(color: Colors.white),
                             ),
                           ]),
                     ),
-                    Gap(AppLayout.getHeight(20)),
+                    Gap(AppLayout.getHeight(50)),
                     Container(
-                      width: size.width * 0.44,
+                      width: size.width * 0.35,
                       height: AppLayout.getHeight(174),
                       decoration: BoxDecoration(
                         color: Styles.orangeColor,

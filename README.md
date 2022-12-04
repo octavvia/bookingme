@@ -1,9 +1,16 @@
 ## my progress 
-day 2:
-![image](https://user-images.githubusercontent.com/86775678/204094122-7526f74b-f44a-4800-911d-35a6e0079a5b.png) 
-![image](https://user-images.githubusercontent.com/86775678/204192347-64847f99-ee2d-48cb-9064-3d5e8ebedbe7.png)
-![image](https://user-images.githubusercontent.com/86775678/204477993-39b31cc6-0239-46e3-b48f-e82ae3060623.png)
-build UI design for home screen
+already done :
+______
+| ui home screen| ui search screen | ui ticket screen |
+________
+| ![image](https://user-images.githubusercontent.com/86775678/205308267-5a9849de-3910-4f32-ac31-bb2019e7696b.png)| ![image](https://user-images.githubusercontent.com/86775678/205309040-14633be0-7e9c-4c6c-b17e-2561e585fbed.png)
+ | ![image](https://user-images.githubusercontent.com/86775678/205309109-1e0e1b04-c535-4ba3-874e-ac1fb5d7f1c0.png)
 
-on going Search screen
+
+on going:
+- ui design for ticket view
+- ui design for search view
+
+soon:
+- ui design for profile
 

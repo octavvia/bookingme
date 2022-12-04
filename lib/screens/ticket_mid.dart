@@ -117,7 +117,7 @@ class TicketMid extends StatelessWidget {
           start of orange part ticket*/
             ,
             Container(
-              color: Colors.white70,
+              color: Colors.blue,
               child: Row(
                   // children: [
                   // SizedBox(
@@ -168,9 +168,9 @@ class TicketMid extends StatelessWidget {
                   ),
             ),
             Container(
-              decoration: const BoxDecoration(
-                color: Colors.white70,
-                borderRadius: BorderRadius.only(
+              decoration: BoxDecoration(
+                color: Colors.grey.shade400,
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(21),
                   bottomRight: Radius.circular(21),
                 ),

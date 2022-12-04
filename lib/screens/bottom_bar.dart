@@ -1,4 +1,5 @@
 import 'package:bookingme/screens/home_screen.dart';
+import 'package:bookingme/screens/profile_screen.dart';
 import 'package:bookingme/screens/search_screen.dart';
 import 'package:bookingme/screens/ticket_screen.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class _BottomBarState extends State<BottomBar> {
     const HomeScreen(),
     const SearchScreen(),
     const TicketScreen(),
-    const Text('Profile'),
+    const ProfileScreen(),
   ];
   void _onItemTapped(int index) {
     setState(() {

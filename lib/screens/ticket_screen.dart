@@ -14,29 +14,49 @@ class TicketScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
     return Scaffold(
-      body: Stack(
+      body: ListView(
+        padding: EdgeInsets.symmetric(
+          horizontal: AppLayout.getWidth(20),
+          vertical: AppLayout.getHeight(20),
+        ),
         children: [
-          ListView(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppLayout.getWidth(20),
-                  vertical: AppLayout.getHeight(20)),
-              children: [
-                Gap(AppLayout.getHeight(40)),
-                Text(
-                  "Ticket",
-                  style: Styles.headLineStyle1,
-                ),
-                Gap(AppLayout.getHeight(20)),
-                const AppTicketTabs(
-                    firstTab: 'Upcoming', secondTab: 'Previous'),
-                Gap(AppLayout.getHeight(20)),
-                Container(
-                  padding: EdgeInsets.only(left: AppLayout.getHeight(20)),
-                  child: TicketMid(
-                    ticket: ticketList[0],
-                  ),
-                )
-              ])
+          Gap(AppLayout.getHeight(40)),
+          Text(
+            "Ticket",
+            style: Styles.headLineStyle1,
+          ),
+          Gap(AppLayout.getHeight(20)),
+          const AppTicketTabs(firstTab: 'Upcoming', secondTab: 'Previous'),
+          Gap(AppLayout.getHeight(20)),
+          Center(
+            child: Text(
+              "Your Ticket",
+              style: Styles.headLineStyle2,
+            ),
+          ),
+          Gap(AppLayout.getHeight(20)),
+          Container(
+            padding: EdgeInsets.only(left: AppLayout.getHeight(20)),
+            child: TicketMid(
+              ticket: ticketList[0],
+            ),
+          ),
+          Center(
+            child: Text(
+              "Tickets History",
+              style: Styles.headLineStyle2,
+            ),
+          ),
+          Gap(AppLayout.getHeight(20)),
+          SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            padding: const EdgeInsets.only(left: 20),
+            child: Column(
+              children: ticketList
+                  .map((singleTicket) => TicketMid(ticket: singleTicket))
+                  .toList(),
+            ),
+          ),
         ],
       ),
     );

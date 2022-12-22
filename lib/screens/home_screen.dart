@@ -30,8 +30,8 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const Gap(5),
                     Text(
-                      'Book Tickets Now',
-                      style: Styles.headLineStyle1,
+                      'Book for Your K-Tickets Now',
+                      style: Styles.headLineStyle2,
                     ),
                   ],
                 ),
@@ -59,14 +59,14 @@ class HomeScreen extends StatelessWidget {
                     color: Color(0xFFBFC205),
                   ),
                   Text(
-                    "Search for your destination",
+                    "Search for your event",
                     style: Styles.headLineStyle4,
                   ),
                 ]),
               ),
               const Gap(40),
               const AppDoubleTextWidget(
-                  bigText: 'Upcoming Flight', smallText: 'See All'),
+                  bigText: 'Upcoming Event', smallText: 'See All'),
             ]),
           ),
           // const TicketView(),
@@ -84,7 +84,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: const AppDoubleTextWidget(
-                bigText: 'Hotels', smallText: 'See All'),
+                bigText: 'Event', smallText: 'See All'),
           ),
           const Gap(15),
           SingleChildScrollView(

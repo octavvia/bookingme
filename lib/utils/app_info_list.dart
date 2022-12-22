@@ -1,20 +1,20 @@
 List<Map<String, dynamic>> hotelList = [
   {
-    'image': 'one.jpg',
-    'place': 'open space',
-    'hotel': 'Hyatt Regency',
-    'price': '1jt',
+    'image': 'one.png',
+    'place': 'Black Pink',
+    'hotel': 'Jakarta',
+    'price': '2jt',
   },
   {
     'image': 'two.jpg',
-    'place': 'open space',
-    'hotel': 'Sheraton',
+    'place': 'NCT Dream',
+    'hotel': 'Jakarta',
     'price': '1.8jt',
   },
   {
-    'image': 'three.jpg',
-    'place': 'open space',
-    'hotel': 'Grand Hyatt',
+    'image': 'tree.jpeg',
+    'place': 'Twice',
+    'hotel': 'jakarta',
     'price': '2jt',
   },
 ];
@@ -22,12 +22,12 @@ List<Map<String, dynamic>> hotelList = [
 List<Map<String, dynamic>> ticketList = [
   {
     'from': {
-      'code': 'CGK',
-      'city': 'Jakarta',
+      'code': 'VVIP',
+      'city': 'GATE 1',
     },
     'to': {
-      'code': 'DPS',
-      'city': 'Bali',
+      'code': 'VVIP',
+      'city': 'GATE 2',
     },
     'flying_time': '2h 30m',
     'date': '1 dec 2022',
@@ -36,12 +36,12 @@ List<Map<String, dynamic>> ticketList = [
   },
   {
     'from': {
-      'code': 'SUB',
-      'city': 'Surabaya',
+      'code': 'GOLD',
+      'city': 'GATE 3',
     },
     'to': {
-      'code': 'DPS',
-      'city': 'Bali',
+      'code': 'GOLD',
+      'city': 'GATE 3',
     },
     'flying_time': '2h 30m',
     'date': '2 dec 2022',
@@ -50,12 +50,12 @@ List<Map<String, dynamic>> ticketList = [
   },
   {
     'from': {
-      'code': 'DPS',
-      'city': 'Bali',
+      'code': 'SILVER',
+      'city': 'GATE 1',
     },
     'to': {
-      'code': 'SUB',
-      'city': 'Surabaya',
+      'code': 'SILVER',
+      'city': 'GATE 2',
     },
     'flying_time': '1h 30m',
     'date': '3 dec 2022',

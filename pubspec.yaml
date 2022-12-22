@@ -62,10 +62,11 @@ flutter:
   assets:
     - assets/images/travel.jpg
     - assets/images/bedroom1.jpg
-    - assets/images/one.jpg
+    - assets/images/one.png
     - assets/images/two.jpg
-    - assets/images/three.jpg
+    - assets/images/tree.jpeg
     - assets/images/me.jpg
+    - assets/images/qr.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

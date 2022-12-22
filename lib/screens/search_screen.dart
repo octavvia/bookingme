@@ -25,7 +25,7 @@ class SearchScreen extends StatelessWidget {
                     .copyWith(fontSize: AppLayout.getWidth(35))),
             Gap(AppLayout.getHeight(20)),
             const AppTicketTabs(
-                firstTab: 'AirLine Ticket', secondTab: 'Hotels'),
+                firstTab: 'Event Ticket', secondTab: 'Reservations'),
             // FittedBox(
             //   child: Container(
             //     padding: const EdgeInsets.all(3.5),
@@ -67,13 +67,13 @@ class SearchScreen extends StatelessWidget {
             // ),
             Gap(AppLayout.getHeight(25)),
             const AppIconText(
-              icon: Icons.flight_takeoff_rounded,
-              text: 'depature',
+              icon: Icons.event_repeat_outlined,
+              text: 'K-Event 2023',
             ),
             Gap(AppLayout.getHeight(20)),
             const AppIconText(
-              icon: Icons.flight_land_rounded,
-              text: 'Arrival',
+              icon: Icons.event_available,
+              text: 'K-Event Now',
             ),
             Gap(AppLayout.getHeight(20)),
             Container(
@@ -93,7 +93,7 @@ class SearchScreen extends StatelessWidget {
             ),
             Gap(AppLayout.getHeight(20)),
             const AppDoubleTextWidget(
-                bigText: 'Upcoming Flight', smallText: 'see all'),
+                bigText: 'Upcoming K-Event', smallText: 'see all'),
             Gap(AppLayout.getHeight(20)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -117,12 +117,12 @@ class SearchScreen extends StatelessWidget {
                               BorderRadius.circular(AppLayout.getHeight(12)),
                           image: const DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage('assets/images/one.jpg')),
+                              image: AssetImage('assets/images/one.png')),
                         ),
                       ),
                       Gap(AppLayout.getHeight(10)),
                       Text(
-                          '20% discount of early booking of this flight. Don\'t miss out this chance',
+                          '20% discount of early booking of this event. Don\'t miss out this chance',
                           style: Styles.headLineStyle2),
                     ],
                   ),
@@ -144,21 +144,33 @@ class SearchScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              '20% discount of early booking of this flight. Don\'t miss out this chance',
+                              '20% discount of early booking of this event. Don\'t miss out this chance',
                               style: Styles.headLineStyle4
                                   .copyWith(color: Colors.white),
                             ),
                           ]),
                     ),
-                    Gap(AppLayout.getHeight(50)),
+                    Gap(AppLayout.getHeight(20)),
                     Container(
                       width: size.width * 0.35,
                       height: AppLayout.getHeight(174),
                       decoration: BoxDecoration(
-                        color: Styles.orangeColor,
+                        color: Styles.primaryColor,
                         borderRadius:
                             BorderRadius.circular(AppLayout.getHeight(18)),
                       ),
+                      padding: EdgeInsets.symmetric(
+                          horizontal: AppLayout.getWidth(15),
+                          vertical: AppLayout.getHeight(15)),
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '20% discount of early booking of this event. Don\'t miss out this chance',
+                              style: Styles.headLineStyle4
+                                  .copyWith(color: Colors.white),
+                            ),
+                          ]),
                     ),
                   ],
                 )

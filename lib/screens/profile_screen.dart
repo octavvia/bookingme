@@ -39,7 +39,7 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   Text('octavia', style: Styles.headLineStyle1),
                   Gap(AppLayout.getHeight(5)),
-                  Text('BALI-JAKARTA', style: Styles.headLineStyle3),
+                  Text('Surakarta', style: Styles.headLineStyle3),
                   Gap(AppLayout.getHeight(5)),
                   Container(
                     decoration: BoxDecoration(
@@ -139,7 +139,7 @@ class ProfileScreen extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             )),
-                        Text('you have 90 flight in this year',
+                        Text('you have 90 k-event in this year',
                             style: Styles.headLineStyle2.copyWith(
                               fontWeight: FontWeight.w500,
                               color: Colors.white.withOpacity(0.95),
@@ -153,7 +153,11 @@ class ProfileScreen extends StatelessWidget {
             ],
           ),
           Gap(AppLayout.getHeight(25)),
-          Text('Acumulated miles', style: Styles.headLineStyle2),
+          Text(
+            'Acumulated point',
+            style: Styles.headLineStyle2,
+            textAlign: TextAlign.center,
+          ),
           Gap(AppLayout.getHeight(20)),
           Container(
             padding: EdgeInsets.symmetric(
@@ -162,88 +166,100 @@ class ProfileScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Text('1.804.967',
+                Text('100',
                     style: TextStyle(
                       fontSize: 45,
                       color: Styles.textColor,
                       fontWeight: FontWeight.w600,
                     )),
                 Gap(AppLayout.getHeight(40)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('milles accured',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                    Text('12 december 2022',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                  ],
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     Text('milles accured',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //     Text('12 december 2022',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //   ],
+                // ),
+                // Gap(AppLayout.getHeight(20)),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     Text('23.042',
+                //         style: Styles.headLineStyle4.copyWith(
+                //             fontSize: 25, fontWeight: FontWeight.w600)),
+                //     Text('Airlines CO',
+                //         style: Styles.headLineStyle4.copyWith(
+                //             fontSize: 25, fontWeight: FontWeight.w600)),
+                //   ],
+                // ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     Text('milles',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //     Text('recieved from',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //   ],
+                // ),
+                // Gap(AppLayout.getHeight(40)),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     Text('25.976',
+                //         style: Styles.headLineStyle4.copyWith(
+                //             fontSize: 25, fontWeight: FontWeight.w600)),
+                //     Text('Lion Air',
+                //         style: Styles.headLineStyle4.copyWith(
+                //             fontSize: 25, fontWeight: FontWeight.w600)),
+                //   ],
+                // ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     Text('milles',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //     Text('recieved from',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //   ],
+                // ),
+                // Gap(AppLayout.getHeight(40)),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     Text('15.789',
+                //         style: Styles.headLineStyle4.copyWith(
+                //             fontSize: 25, fontWeight: FontWeight.w600)),
+                //     Text('Batik Air',
+                //         style: Styles.headLineStyle4.copyWith(
+                //             fontSize: 25, fontWeight: FontWeight.w600)),
+                //   ],
+                // ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     Text('milles',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //     Text('recieved from',
+                //         style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                //   ],
+                // ),
+
+                Container(
+                  height: AppLayout.getHeight(300),
+                  width: AppLayout.getWidth(300),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(AppLayout.getHeight(0)),
+                    image: const DecorationImage(
+                      image: AssetImage('assets/images/qr.png'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 Gap(AppLayout.getHeight(20)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('23.042',
-                        style: Styles.headLineStyle4.copyWith(
-                            fontSize: 25, fontWeight: FontWeight.w600)),
-                    Text('Airlines CO',
-                        style: Styles.headLineStyle4.copyWith(
-                            fontSize: 25, fontWeight: FontWeight.w600)),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('milles',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                    Text('recieved from',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                  ],
-                ),
-                Gap(AppLayout.getHeight(40)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('25.976',
-                        style: Styles.headLineStyle4.copyWith(
-                            fontSize: 25, fontWeight: FontWeight.w600)),
-                    Text('Lion Air',
-                        style: Styles.headLineStyle4.copyWith(
-                            fontSize: 25, fontWeight: FontWeight.w600)),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('milles',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                    Text('recieved from',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                  ],
-                ),
-                Gap(AppLayout.getHeight(40)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('15.789',
-                        style: Styles.headLineStyle4.copyWith(
-                            fontSize: 25, fontWeight: FontWeight.w600)),
-                    Text('Batik Air',
-                        style: Styles.headLineStyle4.copyWith(
-                            fontSize: 25, fontWeight: FontWeight.w600)),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('milles',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                    Text('recieved from',
-                        style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                  ],
-                ),
-                Gap(AppLayout.getHeight(40)),
                 Center(
-                  child: Text('View all',
+                  child: Text('Scan QR code to enter the event',
                       style: Styles.headLineStyle4
                           .copyWith(fontSize: 16, color: Styles.primaryColor)),
                 ),

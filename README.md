@@ -2,20 +2,15 @@
 
 
 
-TaskMe is a mobile application developed using the Flutter framework. The app features an aesthetic UI design and utilizes the GetX library to provide a smooth and intuitive user experience. TaskMe allows users to create, read, update, and delete tasks, making it a versatile tool for managing and organizing daily tasks and responsibilities. Whether you need to create a to-do list, schedule appointments, or set reminders, TaskMe has you covered. With its sleek design and powerful features, TaskMe is the perfect companion for staying on top of your busy schedule.
+BookingMe is a Korean concerts ticket booking platform developed using Flutter and GetX. It features an aesthetic design with a focus on user interface and the convenience of QR code ticketing. With BookingMe, users can easily browse and purchase tickets for their favorite Korean concerts, and access them with a simple scan of a QR code on their devices.
 
 
-| home screen view : | Menu Screen : |
+| Home screen view : | Search Screen : |
 | :---: | :---: | 
-| <img src="https://user-images.githubusercontent.com/86775678/208221283-f336799e-71dd-432e-8d79-4e9872093a99.png" width=75% height=75%> | <img src="https://user-images.githubusercontent.com/86775678/208220942-e06f8286-7821-45f9-85bb-58fa978bceef.png" width=75% height=75%> |
-
-for creating new task using menu create and to view task using menu see all
+| <img src="https://user-images.githubusercontent.com/86775678/209114672-f17a74c5-960d-4179-93f6-500e8dd25958.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/209115594-9d50b3bc-ac51-4cfc-bea2-4bf49c1b6759.png" width=50% height=50%> |
 
 
 
-| Create : | See All : |
+| MY Ticket : | My Profile : |
 | :---: | :---: | 
-| <img src="https://user-images.githubusercontent.com/86775678/208221222-85438c2b-1bed-4a94-829b-d694e51d8925.png" width=75% height=75%> | <img src="https://user-images.githubusercontent.com/86775678/208221239-fc4443e3-a09b-462c-8940-d872d2bfa560.png" width=75% height=75%> |
-
-
-
+| <img src="https://user-images.githubusercontent.com/86775678/209115380-7b0681f8-6a82-4ba7-8468-dc83117e5092.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/86775678/209115466-939ae641-3d55-4b7e-83cb-71e2affe9aee.png" width=50% height=50%> |

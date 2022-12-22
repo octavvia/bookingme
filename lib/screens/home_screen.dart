@@ -1,4 +1,4 @@
-import 'package:bookingme/screens/hotel_screen.dart';
+import 'package:bookingme/screens/concert_screen.dart';
 import 'package:bookingme/screens/ticket_view.dart';
 import 'package:bookingme/utils/app_info_list.dart';
 import 'package:bookingme/utils/app_styles.dart';

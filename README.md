@@ -4,6 +4,12 @@
 
 BookingMe is a Korean concerts ticket booking platform developed using Flutter and GetX. It features an aesthetic design with a focus on user interface and the convenience of QR code ticketing. With BookingMe, users can easily browse and purchase tickets for their favorite Korean concerts, and access them with a simple scan of a QR code on their devices.
 
+________________________________________________________________
+currently version available on https://github.com/vviia/bookingme/releases/tag/v1.0.0
+
+
+______________________________________________________________________________
+
 
 | Home screen view : | Search Screen : |
 | :---: | :---: | 
